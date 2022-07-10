@@ -11,9 +11,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tb_category")
 public class Category implements Serializable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,12 +36,12 @@ public class Category implements Serializable {
 		this.id = id;
 	}
 
-	public String getNome() {
+	public String getName() {
 		return name;
 	}
 
-	public void setNome(String nome) {
-		this.name = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
@@ -63,8 +60,8 @@ public class Category implements Serializable {
 		Category other = (Category) obj;
 		return id == other.id;
 	}
-	
-	
+
+
 	
 
 }
